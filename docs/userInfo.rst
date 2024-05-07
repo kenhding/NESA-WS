@@ -56,7 +56,7 @@ Popular neuroimaging software such as FSL, freesurfer, etc are loaded in Docker 
 
 **Matlab:**
 
-Matlab uses please refers to the internal manual. 
+Matlab setup was elaborated in the inrternal manual.
 
 
 Data Backup
