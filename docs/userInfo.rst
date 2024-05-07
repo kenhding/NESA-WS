@@ -4,25 +4,20 @@ User Info
 
 Server Access 
 ----
-Here are the addess to both servers. If you enter 3 times incorrect password, your account will be blocked for 5 mins.
+Here are the addess to both servers. If you enter 5 times incorrect password within 30 mins, your IP will be blocked for 10 mins.
 
-Server1:
-
-::
-
-  ssh <user name>@10.136.26.181
-
-
-Server2:
+Server IP:
 
 ::
 
-  ssh <user name>@10.136.26.131
+  ssh <user name>@192.168.137.231
+
 
 
 User Storage
 ----
-Server2 was equipped with a total storage of 7 TB(3TB NVMe SSD + 4T SATA SSD), we used hardware RAID_ to protect the data loss due to hardware defects. Three main disks with 4.4TB each for the major storage, each disk configured with RAID5 thus 3.3TB is available for read/write. The user accounts are located under the ``/home`` path configured RAID1. The overview and the mount path as below:
+The server was equipped with a total storage of 7 TB(3TB NVMe SSD + 4T SATA SSD), 5.3TB was avaiable to share bewteen all users. The user accounts are located under the ``/home`` path configured. The overview and the mount path as below:
+
 
 
 ::
@@ -31,7 +26,7 @@ Server2 was equipped with a total storage of 7 TB(3TB NVMe SSD + 4T SATA SSD), w
   /dev/mapper/rhel-home  5.4T   52G  5.3T   1% /home
 
 
-
+To maximize the usage and performance, we do NOT have [Quota](https://linux.die.net/man/1/quota) and [RAID](https://de.wikipedia.org/wiki/RAID) configuration on the server. Therefore, the recommended approach is to have your test/experimental dataset on the server but large database and headvy processing outputs to the [NAS](https://www.synology.com/en-uk/company/news/article/DS920plus) where has a RAID and large storage (36TB in total). NAS access can be acquired from the administrator. 
 
 User Permission
 ----
