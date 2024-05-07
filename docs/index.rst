@@ -15,7 +15,5 @@ Contents
    userInfo
    dockerInfo
    software
-   matlabSettings
-   externelAccess
 
 
