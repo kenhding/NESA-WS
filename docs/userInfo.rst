@@ -16,7 +16,7 @@ Server IP:
 
 User Storage
 ----
-The server was equipped with a total storage of 7 TB(3TB NVMe SSD + 4T SATA SSD), 5.3TB was avaiable to share bewteen all users. The user accounts are located under the ``/home`` path configured. The overview and the mount path as below:
+The server was equipped with a total storage of 7 TB (3TB NVMe SSD + 4T SATA SSD), 5.3TB was avaiable to share bewteen all users. The user accounts are located under the ``/home`` path configured. The overview and the mount path as below:
 
 
 
@@ -27,7 +27,7 @@ The server was equipped with a total storage of 7 TB(3TB NVMe SSD + 4T SATA SSD)
 
 
 .. warning::
-To maximize the usage and performance, we do NOT have Quota_ and RAID_ configuration on the server. Therefore, the recommended approach is to have your test/experimental dataset on the server but large database and headvy processing outputs to the NAS_ where has a RAID and large storage (36TB in total). 
+To maximize the usage and performance, we do NOT have Quota_ and RAID_ configuration on the server. Therefore, the recommended approach is to have your test/experimental dataset on the server but large database and headvy processing outputs to the NAS_ where has a RAID_ and large storage (36TB in total). 
 
 User Permission
 ----
@@ -46,6 +46,7 @@ Python on the server is provided via ``pyenv`` with version from 3.6-3.11. Insta
   pyenv activate <custom name of environment>
 
 .. warning::
+
 Do not install conda on the server. If you have complicated dependencies please use Docker or setup it in your own virtual environment.
 
 
