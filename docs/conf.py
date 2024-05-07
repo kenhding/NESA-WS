@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "Basic Sphinx Example Project"
+project = "NESA-WS Documentation"
 copyright = "2022, Read the Docs core team"
-author = "Read the Docs core team"
+author = "Ken"
 
 
 # -- General configuration ---------------------------------------------------
