@@ -1,5 +1,5 @@
 User Info
-===
+====
 
 
 Server Access 
@@ -26,22 +26,40 @@ The server was equipped with a total storage of 7 TB(3TB NVMe SSD + 4T SATA SSD)
   /dev/mapper/rhel-home  5.4T   52G  5.3T   1% /home
 
 
-To maximize the usage and performance, we do NOT have [Quota](https://linux.die.net/man/1/quota) and [RAID](https://de.wikipedia.org/wiki/RAID) configuration on the server. Therefore, the recommended approach is to have your test/experimental dataset on the server but large database and headvy processing outputs to the [NAS](https://www.synology.com/en-uk/company/news/article/DS920plus) where has a RAID and large storage (36TB in total). NAS access can be acquired from the administrator. 
+.. warning::
+To maximize the usage and performance, we do NOT have [Quota](https://linux.die.net/man/1/quota) and [RAID](https://de.wikipedia.org/wiki/RAID) configuration on the server. Therefore, the recommended approach is to have your test/experimental dataset on the server but large database and headvy processing outputs to the [NAS](https://www.synology.com/en-uk/company/news/article/DS920plus) where has a RAID and large storage (36TB in total). 
 
 User Permission
 ----
 
-**Storage:**
+**NAS access:**
 
-The current configuration disabled the direct access from users to the storage disks via ``/mnt`` path, you will find a soft link folder under your own ``/home/<user name>`` path.
-
-.. warning::
-
-  Please store and process your data in the given storage folder. Processing your data directly under your home directory will be very slow due to the RAID1 setup and consume the limit sharing space between users. In case you need to share your data with other users, please call 7849.
+The current configuration disabled the direct access from users to the NAS path. NAS access can be acquired from the administrator. You will find a soft link folder under your own ``/home/<user name>`` path.
 
 **Python:**
 
-Server2 has python 2.7.5, 3.6.8, and 3.7.9 installed. A personal/customized python environment can be managed by ``virtualenv``. Installing packages via ``pip`` is allowed with virtual environment only. Virtual environment steps can be found on `Mogon WIKI <https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:python?s[]=virtual>`_  
+Python on the server is provided via ``pyenv``. A personal/customized python environment can be managed by ``virtualenv``. For example:
+
+.. code-block:: console
+
+pyenv virtualenv 3.10
+
+>>> import lumache
+>>> lumache.get_random_ingredients()
+['shells', 'gorgonzola', 'parsley']
+
+
+
+Virtual environment steps can be found on `Mogon WIKI <https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:python?s[]=virtual>`_  
+
+..warning::
+ Installing packages via ``pip`` is allowed with virtual environment only.
+
+
+
+.. warning::
+To maximize the usage and performance, we do NOT have [Quota](https://linux.die.net/man/1/quota) and [RAID](https://de.wikipedia.org/wiki/RAID) configuration on the server. Therefore, the recommended approach is to have your test/experimental dataset on the server but large database and headvy processing outputs to the [NAS](https://www.synology.com/en-uk/company/news/article/DS920plus) where has a RAID and large storage (36TB in total). 
+
 
 **Software:**
 
