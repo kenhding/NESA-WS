@@ -12,6 +12,7 @@ Contents
 
 .. toctree::
 
+   Home <self>
    userInfo
    dockerInfo
    software
