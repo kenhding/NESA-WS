@@ -41,7 +41,6 @@ The current configuration disabled the direct access from users to the NAS path.
 Python on the server is provided via ``pyenv`` with version from 3.6-3.11. Installing packages via ``pip`` is allowed with virtual environment only. A personal/customized python environment can be managed by ``virtualenv``. For example:
 
 .. code-block:: console
-
 pyenv virtualenv 3.7 <customized name of the virtual environment>
 
 .. warning::
