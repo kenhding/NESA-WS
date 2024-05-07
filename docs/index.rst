@@ -12,4 +12,10 @@ Contents
 
 .. toctree::
 
+   userInfo
+   dockerInfo
+   software
+   matlabSettings
+   externelAccess
+
 
