@@ -1,5 +1,5 @@
 Software Info
-====
+===
 
 Apps are managed by Snap_ 
 
