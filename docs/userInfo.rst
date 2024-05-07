@@ -52,7 +52,7 @@ Do not install conda on the server. If you have complicated dependencies please 
 
 **Neuroimaging software:**
 
-Popular neuroimaging software such as FSL, freesurfer, etc are loaded in Docker via image of [Neurodesk](https://www.neurodesk.org/docs/getting-started/neurodesktop/linux/).
+Popular neuroimaging software such as FSL, freesurfer, etc are loaded in Docker via image of Neurodesk.
 
 **Matlab:**
 
@@ -70,3 +70,4 @@ Currently, the NAS_ does not enable the auto sychronization for the server. This
 .. _Anaconda: https://www.anaconda.com/
 .. _RAID: https://de.wikipedia.org/wiki/RAID
 .. Quota: https://linux.die.net/man/1/quota
+.. Neurodesk: https://www.neurodesk.org/docs/getting-started/neurodesktop/linux/
