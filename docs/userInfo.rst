@@ -42,7 +42,8 @@ Python on the server is provided via ``pyenv`` with version from 3.6-3.11. Insta
 
 .. code-block:: console
 
-  pyenv virtualenv 3.7 <customized name of the virtual environment>
+  pyenv virtualenv 3.7 <custom name of environment>
+  pyenv activate <custom name of environment>
 
 .. warning::
 Do not install conda on the server. If you have complicated dependencies please use Docker or setup it in your own virtual environment.
