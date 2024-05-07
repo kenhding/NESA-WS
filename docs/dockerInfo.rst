@@ -1,5 +1,5 @@
 Docker Info
-====
+=====
 
 For group member who is new to Docker, there is nice tutorial_ and videos_ to learn Docker. 
 Why are we using Docker? We had so many issues with the old server due to the dependencies. For instance, using ``fmriprep`` requires 8 other software, each of them needs some other packages. At the end of the day, the software may still not work because of compatibility or other unknown conflicts. While Docker runs software in an isolated container(environment) without bothering the OS configuration.
