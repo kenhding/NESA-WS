@@ -13,6 +13,14 @@ Server IP:
   ssh <user name>@192.168.137.231
 
 
+**Login Authentication:**
+The first time you log in to the server, you will be prompted to change your password. After changing your password, you will see a link similar to the one below. You need to copy and paste this into your web browser:
+
+::
+
+https://<api>.duosecurity.com/frame/portal/v4/enroll?code=<key>
+
+Please follow the instructions on the web to complete the authentication. Have your smartphone ready for this step. After you have registered, log in to the server again. You will be asked for authentication with your app. You can simply type `1` and push the green button prompt on the mobile app.
 
 User Storage
 ----
