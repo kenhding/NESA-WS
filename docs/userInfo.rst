@@ -14,6 +14,7 @@ Server IP:
 
 
 **Login Authentication:**
+
 The first time you log in to the server, you will be prompted to change your password. After changing your password, you will see a link similar to the one below. You need to copy and paste this into your web browser:
 
 ::
