@@ -18,7 +18,7 @@ The first time you log in to the server, you will be prompted to change your pas
 
 ::
 
-https://<api>.duosecurity.com/frame/portal/v4/enroll?code=<key>
+  https://<api>.duosecurity.com/frame/portal/v4/enroll?code=<key>
 
 Please follow the instructions on the web to complete the authentication. Have your smartphone ready for this step. 
 
