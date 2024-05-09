@@ -4,13 +4,13 @@ User Info
 
 Server Access 
 ----
-Here are the addess to both servers. If you enter 5 times incorrect password within 30 mins, your IP will be blocked for 10 mins.
+Here are the addess to the server. If you enter 5 times incorrect password within 30 mins, your IP will be blocked for 10 mins.
 
 Server IP:
 
 ::
 
-  ssh <user name>@192.168.137.231
+  ssh <user name>@<server IP/address>
 
 
 **Login Authentication:**
@@ -45,7 +45,7 @@ The server was equipped with a total storage of 7 TB (3TB NVMe SSD + 4T SATA SSD
 
 
 .. warning::
-To maximize the usage and performance, we do NOT have Quota_ and RAID_ configuration on the server. Therefore, the recommended approach is to have your test/experimental dataset on the server but large database and headvy processing outputs to the NAS_ where has a RAID_ and large storage (36TB in total). 
+To optimize usage and performance, we did not apply Quota_ and RAID_ configurations on the server. Therefore, we recommend storing your test/experimental dataset on the server. However, please direct outputs from large databases and heavy processing to the NAS_, which is equipped with RAID_ and offers substantial storage capacity (36TB in total).
 
 User Permission
 ----
@@ -56,7 +56,7 @@ The current configuration disabled the direct access from users to the NAS path.
 
 **Python:**
 
-Python on the server is provided via ``pyenv`` with version from 3.6-3.11. Installing packages via ``pip`` is allowed with virtual environment only. A personal/customized python environment can be managed by ``virtualenv``. For example:
+Server-side Python is available through ``pyenv``, supporting versions 3.6-3.11. Package installation via pip is permitted only in a virtual environment, which you can manage using ``virtualenv``. For example:
 
 .. code-block:: console
 
@@ -65,7 +65,7 @@ Python on the server is provided via ``pyenv`` with version from 3.6-3.11. Insta
 
 .. warning::
 
-Do not install conda on the server. If you have complicated dependencies please use Docker or setup it in your own virtual environment.
+Do not install ``conda`` on the server. If you have complex dependencies please use Docker or setup it in your own virtual environment.
 
 
 **Neuroimaging software:**
@@ -74,14 +74,13 @@ Popular neuroimaging software such as FSL, freesurfer, etc are loaded in Docker 
 
 **Matlab:**
 
-Matlab setup was elaborated in the inrternal manual.
+Matlab setup was elaborated in the internal manual.
 
 
 Data Backup
 ----
 
 Currently, the NAS_ does not enable the auto sychronization for the server. This is planed.
-
 
 
 .. _NAS: https://www.synology.com/en-uk/company/news/article/DS920plus
