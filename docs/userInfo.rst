@@ -20,7 +20,17 @@ The first time you log in to the server, you will be prompted to change your pas
 
 https://<api>.duosecurity.com/frame/portal/v4/enroll?code=<key>
 
-Please follow the instructions on the web to complete the authentication. Have your smartphone ready for this step. After you have registered, log in to the server again. You will be asked for authentication with your app. You can simply type `1` and push the green button prompt on the mobile app.
+Please follow the instructions on the web to complete the authentication. Have your smartphone ready for this step. 
+
+.. image:: duo_1.png
+   :width: 200pt
+
+
+After you have registered, log in to the server again. You will be asked for authentication with your app. You can simply type `1` and push the green button prompt on the mobile app.
+
+.. image:: duo_2.png
+   :width: 500pt
+
 
 User Storage
 ----
