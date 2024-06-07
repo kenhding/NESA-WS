@@ -43,7 +43,7 @@ Firstly, we lunch freesurfer from Docker by:
 
    docker run --name <customized name> -it -v /home/<user>/fmriExample/fmriData/:/mnt/data 09e4aa459595 bash
    
-where ``-it`` instructs Docker to allocate a pseudo-TTY connected to the container’s stdin; creating an interactive bash shell in the container. ``-v`` bind a volume which in this case is the dataset we wanted to use from the server path: ``/home/ken/fmriExample/fmriData/`` with freesurfer and mount it at path : ``/mnt/data`` in the container.  ``09e4aa459595`` is the Image ID. 
+where ``-it`` instructs Docker to allocate a pseudo-TTY connected to the container’s stdin; creating an interactive bash shell in the container. ``-v`` bind a volume which in this case is the dataset we wanted to use from the server path: ``/home/<user>/fmriExample/fmriData/`` with freesurfer and mount it at path : ``/mnt/data`` in the container.  ``09e4aa459595`` is the Image ID which is the alternative for ``freesurfer/freesurfer:freeviewAvail``. 
 
 .. warning::
 
